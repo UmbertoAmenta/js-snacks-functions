@@ -4,9 +4,16 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+const findFirstChar = (names, charToFind) => {
+    for (let i = 0; i < names.length; i++) {
+        return names.filter(name => name.startsWith(charToFind))
+    }
+}
 
 
 // Invoca la funzione qui e stampa il risultato in console
+findFirstChar(names, "A")
+console.log(findFirstChar(names, "A"))
 
 
 
