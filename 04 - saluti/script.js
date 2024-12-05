@@ -4,6 +4,12 @@ const userName = 'Mario';
 
 
 // Dichiara la funzione qui.
+/**
+ * Emette un saluto
+ * 
+ * @param {string} userName 
+ * @returns {string}
+ */
 const getHello = (userName) => `Ciao ${userName}`
 
 

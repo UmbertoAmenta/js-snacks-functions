@@ -4,6 +4,13 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+/**
+ * Permette la ricerca, all'interno di un array, degli elementi che iniziano per il carattere desiderato
+ * 
+ * @param {array} names - lista termini
+ * @param {string} charToFind - Carattere (iniziale) da filtrare
+ * @returns {array} Lista elementi filtrata per il primo carattere
+ */
 const findFirstChar = (names, charToFind) => {
     for (let i = 0; i < names.length; i++) {
         return names.filter(name => name.startsWith(charToFind))

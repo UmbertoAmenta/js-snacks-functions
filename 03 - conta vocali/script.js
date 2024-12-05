@@ -4,6 +4,12 @@ const word = 'javascript';
 
 
 // Dichiara la funzione qui.
+/**
+ * Determina il numero di vocali presenti in una stringa
+ * 
+ * @param {string} text 
+ * @returns 
+ */
 const howManyVowels = (text) => {
     let textVowels = text.match(/a|e|i|o|u/gi)
     return textVowels.length

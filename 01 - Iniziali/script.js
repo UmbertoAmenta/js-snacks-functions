@@ -4,6 +4,12 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Giovanni", "Alessandra"];
 
 
 // Dichiara la funzione qui.
+/**
+ * Partendo da un array ne ottiene uno nuovo con le iniziali degli elementi dell'array usato come parametro
+ * 
+ * @param {array} list - lista di termini
+ * @returns {array} Iniziali dei termini della lista
+ */
 const getfirstCharacters = (list) => {
     let firstCharacterList = []
     for (let i = 0; i < list.length; i++) {
