@@ -12,11 +12,23 @@ const names = ["Anna", "Luca", "Marco", "Adele", "Laura", "Alessandra"];
  * @returns {array} Lista elementi filtrata per il primo carattere
  */
 const findFirstChar = (names, charToFind) => {
+    const filteredNames = []
     for (let i = 0; i < names.length; i++) {
-        return names.filter(name => name.startsWith(charToFind))
+        const name = names[i]
+        if (charToFind === name[0]) {
+            filteredNames.push(name)
+        }
     }
+    return filteredNames
 }
 
+
+
+
+// alternativa
+// const findFirstChar = (names, charToFind) => {
+//     return names.filter(name => name.startsWith(charToFind))
+// }
 
 // Invoca la funzione qui e stampa il risultato in console
 findFirstChar(names, "A")
